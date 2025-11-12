@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Visualisasi 3D Cesium.js</title>
+
+    <!-- Tambahkan library Cesium dari CDN -->
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+    <!-- CSS kamu -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ✅ Perbaikan: tombol harus di dalam div #controls -->
+    <div id="controls">
+        <button id="gotoJakarta" class="btn">Jakarta</button>
+        <button id="gotoBali" class="btn">Bali</button>
+        <button id="gotoSurabaya" class="btn">Surabaya</button>
+    </div>
+
+    <div id="cesiumContainer"></div>
+
+
+    <!-- Script utama -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
