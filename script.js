@@ -193,3 +193,10 @@ viewer.scene.postRender.addEventListener(function () {
   }
 });
 
+
+// ganti 123456 dengan Asset ID dari Cesium ion
+Cesium.Cesium3DTileset.fromIonAssetId(4115447).then(function(tileset) {
+  viewer.scene.primitives.add(tileset);
+  viewer.zoomTo(tileset);
+});
+
